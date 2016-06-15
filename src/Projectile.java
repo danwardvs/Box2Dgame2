@@ -12,8 +12,9 @@ public class Projectile extends Box {
 	float time;
 	float lifetime;
 	World gameWorld;
+	String owner;
 	
-	public Projectile(World newWorld, BodyType newBodyType, Character newCharacter, boolean newIsSensor, float newX, float newY, float newWidth, float newHeight,
+	public Projectile(World newWorld, BodyType newBodyType, Character newCharacter, String newOwner, boolean newIsSensor, float newX, float newY, float newWidth, float newHeight,
 			float newAngle, float newR, float newG, float newB, float newA, float newLifetime) {
 		super(newWorld, newBodyType,newIsSensor, newX, newY, newWidth, newHeight, newAngle, newR, newG, newB, newA);
 		// TODO Auto-generated constructor stub
@@ -21,6 +22,7 @@ public class Projectile extends Box {
 		body.setBullet(true);
 		gameWorld = newWorld;
 		gameCharacter = newCharacter;
+		owner = newOwner;
 		
 		
 		
@@ -39,19 +41,16 @@ public class Projectile extends Box {
 			return 0;
 			
 		}
-		for (ContactEdge ce = body.getContactList(); ce != null; ce = ce.next)
-		{
-		     if (ce.other == gameCharacter.body && ce.contact.isTouching())
-		     {
+		if(owner.equals("Enemy")){
+			for (ContactEdge ce = body.getContactList(); ce != null; ce = ce.next){
+				if (ce.other == gameCharacter.body && ce.contact.isTouching()){
 		    	 
-				gameWorld.destroyBody(body);
-				return 2;
-		    	 
-				
-				
-			}
-		
+					gameWorld.destroyBody(body);
+					return 2;
+
+				}		
 			
+			}
 		}
 		return 1;
 			

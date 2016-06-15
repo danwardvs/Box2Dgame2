@@ -92,6 +92,7 @@ public class WorldController {
 			        
 			    }else if(result==2){
 			    	gameItems.remove(j);
+			    	level++;
 			    	clearWorld();
 			    	
 			    	//gameWorld.destroyBody(body);
@@ -155,10 +156,12 @@ public class WorldController {
 			  }
 			  
 			  gameItems.clear();
+			  System.out.println(gameCharacter.body);
+			  gameCharacter.deleteBody();
 			  
-			  level++;
 			  gameLevel.load_level("gamedata/Level_"+level+".xml");
 			  score=10;
+			  gameCharacter.body.setLinearVelocity(new Vec2(0,0));
 			  
 			
 		}

@@ -23,7 +23,7 @@ public class Item extends Box {
 	}
 	
 	public void createProjectile(float newSpeed, float newAngle, float newX, float newY){
-		Projectile newProjectile = new Projectile(gameWorld,BodyType.DYNAMIC,gameCharacter,false,getX()+newX,getY()+newY,0.2f,0.2f,0,1,0f,0f,1,2000);
+		Projectile newProjectile = new Projectile(gameWorld,BodyType.DYNAMIC,gameCharacter,"Enemy",false,getX()+newX,getY()+newY,0.2f,0.2f,0,1,0f,0f,1,2000);
 		newProjectile.applyLinearImpulse(newSpeed, newAngle);
 		gameController.createProjectile(newProjectile);
 	}

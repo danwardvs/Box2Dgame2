@@ -48,13 +48,22 @@ public class Character extends Box {
        
 	}
 	public void createProjectile(float newSpeed, float newAngle, float newX, float newY){
-		Projectile newProjectile = new Projectile(gameWorld,BodyType.DYNAMIC,this,false,getX()+newX,getY()+newY,0.2f,0.2f,0,0.7f,0.7f,0.7f,1,2000);
+		Projectile newProjectile = new Projectile(gameWorld,BodyType.DYNAMIC,this,"Player",false,getX()+newX,getY()+newY,0.2f,0.2f,0,0.7f,0.7f,0.7f,1,2000);
 		newProjectile.applyLinearImpulse(newSpeed, newAngle);
 		gameController.createProjectile(newProjectile);
 	}
 	
 	public void setState(boolean newAlive){
 		alive = newAlive;
+	}
+	public void draw(){
+        Vec2 position = body.getPosition();
+        float angle = body.getAngle();
+        drawRect(angle,position.x*20,position.y*20,width*40,height*40,r,g,b,a);
+        if(!direction)
+        	drawRect(angle,(position.x*20)-10,(position.y*20)+0,30,10,0,0,0,1);
+        if(direction)
+        	drawRect(angle,(position.x*20)+10,(position.y*20)+0,30,10,0,0,0,1);
 	}
 	
 	public void update(int delta){
@@ -100,6 +109,10 @@ public class Character extends Box {
 				 if(body.getLinearVelocity().y<=0.1f && body.getLinearVelocity().y>=-0.1f && Feet.getBody().getContactList()!=null)
 					applyImpulse(0,2000);
 			 }
+			 if (Keyboard.isKeyDown(Keyboard.KEY_R)){
+				 gameController.clearWorld();
+			 }
+			 
 			 if (Keyboard.isKeyDown(Keyboard.KEY_SPACE) && bullet_time>=bullet_time_delay){
 				bullet_time=0;
 				if(direction){

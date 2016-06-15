@@ -82,38 +82,34 @@ public class Box {
 	
 	
 	public void drawRect(float angle,float x, float y, float width, float height, float newR,float newG, float newB, float newA){
-			 // draw quad
-			GL11.glLoadIdentity();
-			GL11.glPushMatrix();
-			GL11.glTranslatef(x, y, 0);
-			GL11.glTranslatef(400, 300, 0);
-			GL11.glRotatef((float)Math.toDegrees(angle), 0, 0, 1);
-			GL11.glTranslatef(-x, -y, 0);
-			GL11.glTranslatef(-400, -300, 0);
-			GL11.glTranslatef(400, 300, 0);
-			
-			
-			
-				//
-				GL11.glBegin(GL11.GL_QUADS);
+		
+		// draw quad
+		GL11.glLoadIdentity();
+		GL11.glPushMatrix();
+		GL11.glTranslatef(x, y, 0);
+		GL11.glTranslatef(400, 300, 0);
+		GL11.glRotatef((float)Math.toDegrees(angle), 0, 0, 1);
+		GL11.glTranslatef(-x, -y, 0);
+		GL11.glTranslatef(-400, -300, 0);
+		GL11.glTranslatef(400, 300, 0);
+
+		GL11.glBegin(GL11.GL_QUADS);
 					
-					GL11.glColor4f(0,0,0,a);
-					GL11.glVertex2f(x-(width/2),y-(height/2));
-					GL11.glVertex2f(x-(width/2)+width,y-(height/2));
-					GL11.glVertex2f(x-(width/2)+width,y+height-(height/2));
-					GL11.glVertex2f(x-(width/2),y+height-(height/2));
+			GL11.glColor4f(0,0,0,a);
+			GL11.glVertex2f(x-(width/2),y-(height/2));
+			GL11.glVertex2f(x-(width/2)+width,y-(height/2));
+			GL11.glVertex2f(x-(width/2)+width,y+height-(height/2));
+			GL11.glVertex2f(x-(width/2),y+height-(height/2));
 				
-					GL11.glColor4f(r,g,b,a);
-					GL11.glVertex2f(x-(width/2)+1,y-(height/2)+1);
-	            	GL11.glVertex2f(x-(width/2)+width-1,y-(height/2)+1);
-	            	GL11.glVertex2f(x-(width/2)+width-1,y+height-(height/2)-1);
-	            	GL11.glVertex2f(x-(width/2)+1,y+height-(height/2)-1);
+			GL11.glColor4f(r,g,b,a);
+			GL11.glVertex2f(x-(width/2)+1,y-(height/2)+1);
+			GL11.glVertex2f(x-(width/2)+width-1,y-(height/2)+1);
+			GL11.glVertex2f(x-(width/2)+width-1,y+height-(height/2)-1);
+			GL11.glVertex2f(x-(width/2)+1,y+height-(height/2)-1);
 	            	
-		           
-	            GL11.glEnd();
+		GL11.glEnd();
 	            
 	            
-	            
-	        GL11.glPopMatrix();
+	    GL11.glPopMatrix();
 		}
 }
