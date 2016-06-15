@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<level>
+	<object type="Character">
+		<x>-16</x>
+		<y>-13</y>
+		<width>0.5</width>
+		<height>1</height>
+		<angle>0</angle>
+		<r>1</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>-12</x>
+		<y>-12</y>
+		<width>2.5</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+
+	<object type="Box">
+		<x>-8</x>
+		<y>-8</y>
+		<width>2.5</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+
+	<object type="Box">
+		<x>-4</x>
+		<y>-4</y>
+		<width>2.5</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>0</x>
+		<y>0</y>
+		<width>2.5</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+		
+	</object>
+	
+	<object type="Box">
+		<x>4</x>
+		<y>4</y>
+		<width>2.5</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+		<object type="Box">
+		<x>2</x>
+		<y>-10</y>
+		<width>0.2</width>
+		<height>2.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-1</x>
+		<y>-14</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>5</x>
+		<y>-14</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>6</x>
+		<y>-15</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-10</x>
+		<y>-6</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-6</x>
+		<y>-6</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-2</x>
+		<y>2</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>2</x>
+		<y>2</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-2</x>
+		<y>-2</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>4.1</x>
+		<y>4.2</y>
+		<width>2</width>
+		<height>0.1</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>1</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-6</x>
+		<y>-3</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-14</x>
+		<y>-10</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-10</x>
+		<y>-10</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	
+	
+
+	
+	
+</level>
+
