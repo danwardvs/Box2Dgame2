@@ -6,16 +6,10 @@ import org.w3c.dom.Node;
 import org.w3c.dom.Element;
 import java.io.File;
 
-import org.jbox2d.common.Vec2;
-import org.jbox2d.dynamics.Body;
-import org.jbox2d.dynamics.BodyDef;
 import org.jbox2d.dynamics.BodyType;
-import org.jbox2d.dynamics.FixtureDef;
 import org.jbox2d.dynamics.World;
 
 public class Level {
-	
-	String level_path;
 	
 	World gameWorld;
 	WorldController gameController;
@@ -35,17 +29,16 @@ public class Level {
 	
 	
 	
-	public Level(WorldController newWorldController, World newWorld, Character newCharacter, String newLevelPath){
-		level_path = newLevelPath;
+	public Level(WorldController newWorldController, World newWorld, Character newCharacter){
 		gameWorld = newWorld;
 		gameController = newWorldController;
 		gameCharacter = newCharacter;
 	}
 	
-	public void load_level(){
+	public void load_level(String newLevelPath){
 		try {
 
-			File fXmlFile = new File(level_path);
+			File fXmlFile = new File(newLevelPath);
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);

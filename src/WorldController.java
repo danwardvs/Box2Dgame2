@@ -5,28 +5,13 @@ import org.jbox2d.collision.shapes.PolygonShape;
 import org.jbox2d.common.Vec2;
 import org.jbox2d.dynamics.Body;
 import org.jbox2d.dynamics.BodyDef;
-import org.jbox2d.dynamics.BodyType;
-import org.jbox2d.dynamics.FixtureDef;
 import org.jbox2d.dynamics.World;
 import org.lwjgl.LWJGLException;
-import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.Sys;
-
-import java.awt.Font;
-import java.io.InputStream;
-import java.io.IOException;
-
-import org.newdawn.slick.opengl.Texture;
-import org.newdawn.slick.opengl.TextureLoader;
-import org.newdawn.slick.util.ResourceLoader;
-import org.newdawn.slick.Color;
-import org.newdawn.slick.TrueTypeFont;
-import org.newdawn.slick.util.ResourceLoader;
-
 
 
 public class WorldController {
@@ -37,12 +22,8 @@ public class WorldController {
 		Boolean leftButtonDown;
 		Boolean rightButtonDown;
 	
-		// Declaring the font 
-	    private TrueTypeFont font2;
-	     
-	    // Should the text be aliased?
-	    private boolean antiAlias = true;
-		
+	    int level = 1;
+	    
 		int score = 10;
 		int BOX_AMOUNT = 25;
 		List<Box> gameBoxes = new ArrayList<Box>();
@@ -61,20 +42,6 @@ public class WorldController {
 	    /** last fps time */
 	    long lastFPS;
 	    
-	 // Load font from file
-		public void loadFont(){
-			
-	        try {
-	            InputStream inputStream = ResourceLoader.getResourceAsStream("gamedata/font.ttf");
-	             
-	            Font awtFont2 = Font.createFont(Font.TRUETYPE_FONT, inputStream);
-	            awtFont2 = awtFont2.deriveFont(24f); // set font size
-	            font2 = new TrueTypeFont(awtFont2, antiAlias);
-	             
-	        } catch (Exception e) {
-	            e.printStackTrace();
-	        }
-		}
 		
 		 public void update(int delta){
 			
@@ -84,7 +51,8 @@ public class WorldController {
 			// Get mouse buttons
 		    leftButtonDown = Mouse.isButtonDown(0);
 		    rightButtonDown = Mouse.isButtonDown(1);
-		    
+            Display.setTitle("Cubes Remaining: " + score);
+
 		    if(leftButtonDown){
 		    	Display.setTitle("X: " + (mouse_x/20-20)+ "Y: " + (mouse_y/20-15));
 		    }
@@ -124,9 +92,11 @@ public class WorldController {
 			        
 			    }else if(result==2){
 			    	gameItems.remove(j);
-			        
-			        break;
+			    	clearWorld();
 			    	
+			    	//gameWorld.destroyBody(body);
+
+			        break;
 			    	// gameLevel = new Level(gameController,gameWorld,gameCharacter,"gamedata/Level_1.xml");
 					// gameLevel.load_level();
 			    	
@@ -144,6 +114,9 @@ public class WorldController {
 			gameBoxes.add(newBox);
 		
 		} 
+		public int getRemainingBoxes(){
+			return score;
+		}
 		 
 		public void createProjectile(Projectile newProjectile){
 			
@@ -163,10 +136,31 @@ public class WorldController {
 			gameCharacter = newCharacter;
 				
 		} 
-		public Level loadLevel(Level newGameLevel, String newLevelName){
-		    newGameLevel  = new Level(gameController,gameWorld,gameCharacter,"gamedata/Level_1.xml");
-		    return newGameLevel;
-		    
+		public void clearWorld(){
+			  for(Box box: gameBoxes){
+		          box.deleteBody();
+
+			  }
+			  gameBoxes.clear();
+			  
+			  for(Projectile projectile: gameProjectiles){
+		          projectile.deleteBody();
+
+			  }
+			  gameProjectiles.clear();
+			  
+			  for(Item item: gameItems){
+		          item.deleteBody();
+
+			  }
+			  
+			  gameItems.clear();
+			  
+			  level++;
+			  gameLevel.load_level("gamedata/Level_"+level+".xml");
+			  score=10;
+			  
+			
 		}
 		
 
@@ -199,7 +193,6 @@ public class WorldController {
 	     */
 	    public void updateFPS() {
 	        if (getTime() - lastFPS > 1000) {
-	            Display.setTitle("Cubes Remaining: " + score);
 	            //Display.setTitle("FPs"+fps);
 
 	            fps = 0;
@@ -229,14 +222,14 @@ public class WorldController {
 		    
 		 
 		    // Setup world
-		    float timeStep = 1.0f/60.0f;
+		    //float timeStep = 1.0f/60.0f;
 		    int velocityIterations = 6;
 		    int positionIterations = 2;
 		    
-		    gameLevel  = new Level(gameController,gameWorld,gameCharacter,"gamedata/Level_1.xml");
-		    gameLevel.load_level();
+		    gameLevel  = new Level(gameController,gameWorld,gameCharacter);
+		    gameLevel.load_level("gamedata/Level_1.xml");
 		    
-		    //loadLevel("poop");
+	
 		    
 		    
 		    // Run loop
@@ -249,7 +242,7 @@ public class WorldController {
 		    
 		 //
 		    
-	        try {
+	     try {
 	        Display.setDisplayMode(new DisplayMode(800,600));
 	        Display.create();
 	    } catch (LWJGLException e) {

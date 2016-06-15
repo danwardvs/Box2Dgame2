@@ -5,13 +5,11 @@ import org.jbox2d.dynamics.BodyDef;
 import org.jbox2d.dynamics.BodyType;
 import org.jbox2d.dynamics.FixtureDef;
 import org.jbox2d.dynamics.World;
-import org.lwjgl.LWJGLException;
-import org.lwjgl.opengl.Display;
-import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 
 public class Box {
 	
+	World gameWorld;
 	Body body;
 	float width;
 	float height;
@@ -22,6 +20,7 @@ public class Box {
 	
 	public Box(World newWorld,BodyType newBodyType, boolean newIsSensor, float newX, float newY,float newWidth, float newHeight, float newAngle, float newR,float newG, float newB, float newA){
 		
+		gameWorld = newWorld;
 		r = newR;
 		g = newG;
 		b = newB;
@@ -76,6 +75,9 @@ public class Box {
 	
 	public Body getBody(){
 		return body;
+	}
+	public void deleteBody(){
+		gameWorld.destroyBody(body);
 	}
 	
 	

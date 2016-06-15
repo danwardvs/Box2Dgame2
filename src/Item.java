@@ -46,9 +46,11 @@ public class Item extends Box {
 		     if (ce.other == gameCharacter.body && ce.contact.isTouching())
 		     {
 		    	 if(type.equals("Door")){
-						gameWorld.destroyBody(body);
-						return 2;
-					}
+		    		 	if(gameController.getRemainingBoxes()<1){
+		    		 		gameWorld.destroyBody(body);
+		    		 		return 2;
+		    		 	}
+		    		}
 					if(type.equals("Star")){
 						gameWorld.destroyBody(body);
 						return 1;

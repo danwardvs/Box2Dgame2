@@ -39,10 +39,14 @@ public class Projectile extends Box {
 			return 0;
 			
 		}
-		else if(itemContactList!=null){
-			if(itemContactList.other==gameCharacter.body){
-					gameWorld.destroyBody(body);
-					return 2;
+		for (ContactEdge ce = body.getContactList(); ce != null; ce = ce.next)
+		{
+		     if (ce.other == gameCharacter.body && ce.contact.isTouching())
+		     {
+		    	 
+				gameWorld.destroyBody(body);
+				return 2;
+		    	 
 				
 				
 			}
