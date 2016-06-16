@@ -22,7 +22,7 @@ public class WorldController {
 		Boolean leftButtonDown;
 		Boolean rightButtonDown;
 	
-	    int level = 1;
+	    int level = 2;
 	    
 		int score = 10;
 		int BOX_AMOUNT = 25;
@@ -156,7 +156,6 @@ public class WorldController {
 			  }
 			  
 			  gameItems.clear();
-			  System.out.println(gameCharacter.body);
 			  gameCharacter.deleteBody();
 			  
 			  gameLevel.load_level("gamedata/Level_"+level+".xml");
@@ -230,7 +229,7 @@ public class WorldController {
 		    int positionIterations = 2;
 		    
 		    gameLevel  = new Level(gameController,gameWorld,gameCharacter);
-		    gameLevel.load_level("gamedata/Level_1.xml");
+		    gameLevel.load_level("gamedata/Level_"+level+".xml");
 		    
 	
 		    
