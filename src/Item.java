@@ -10,6 +10,7 @@ public class Item extends Box {
 	String type;
 	WorldController gameController;
 	int shootTimer;
+	boolean alive=true;
 
 	
 	public Item(World newWorld, Character newCharacter, WorldController newWorldController, String newType, BodyType newBodyType, boolean newIsSensor, float newX, float newY, float newWidth,
@@ -33,8 +34,10 @@ public class Item extends Box {
 		
 		
 		if(type.equals("Enemy")){
+			if(body.getLinearVelocity().x>5 || body.getLinearVelocity().x<-5)
+				alive=false;
 			shootTimer++;
-			if(shootTimer>60){
+			if(shootTimer>120 && alive){
 				createProjectile(300,20,2,0.5f);
 				createProjectile(300,0f,2,0);
 				createProjectile(300,-20f,2,-0.5f);

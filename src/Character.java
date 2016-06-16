@@ -94,6 +94,10 @@ public class Character extends Box {
 			alive=false;
 			
 		}
+		if (Keyboard.isKeyDown(Keyboard.KEY_R)){
+			 gameController.clearWorld();
+		 }
+		
 		 if(alive){
 			 bullet_time+=delta;
 			 if (Keyboard.isKeyDown(Keyboard.KEY_RIGHT) || Keyboard.isKeyDown(Keyboard.KEY_D) ){
@@ -109,9 +113,7 @@ public class Character extends Box {
 				 if(body.getLinearVelocity().y<=0.1f && body.getLinearVelocity().y>=-0.1f && Feet.getBody().getContactList()!=null)
 					applyImpulse(0,2000);
 			 }
-			 if (Keyboard.isKeyDown(Keyboard.KEY_R)){
-				 gameController.clearWorld();
-			 }
+			 
 			 
 			 if (Keyboard.isKeyDown(Keyboard.KEY_SPACE) && bullet_time>=bullet_time_delay){
 				bullet_time=0;
