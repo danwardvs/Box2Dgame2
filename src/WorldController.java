@@ -22,7 +22,7 @@ public class WorldController {
 		Boolean leftButtonDown;
 		Boolean rightButtonDown;
 	
-	    int level = 2;
+	    int level = 1;
 	    
 		int score = 10;
 		int BOX_AMOUNT = 25;

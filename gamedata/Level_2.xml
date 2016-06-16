@@ -133,6 +133,30 @@
 		<bodytype>KINEMATIC</bodytype>
 	</object>
 	
+	<object type="Box">
+		<x>-19.9</x>
+		<y>-6</y>
+		<width>0.2</width>
+		<height>2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>-19.9</x>
+		<y>-13.5</y>
+		<width>0.2</width>
+		<height>1.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	 
 	
 	
 	
@@ -202,14 +226,16 @@
 		<bodytype>DYNAMIC</bodytype>
 	</object>
 	
+
+	
 	
 	
 
 
 	<object type="Item">
 		<itemtype>Door</itemtype>
-		<x>4.1</x>
-		<y>4.2</y>
+		<x>-17</x>
+		<y>10.2</y>
 		<width>2</width>
 		<height>0.1</height>
 		<angle>0</angle>
@@ -308,7 +334,7 @@
 	<object type="Item">
 		<itemtype>Star</itemtype>
 		<x>0</x>
-		<y>-4</y>
+		<y>0</y>
 		<width>0.5</width>
 		<height>0.5</height>
 		<angle>0</angle>
@@ -330,6 +356,47 @@
 		<b>0</b>
 		<bodytype>DYNAMIC</bodytype>
 	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>4</x>
+		<y>3</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>18</x>
+		<y>7</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>1.5</x>
+		<y>12</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	
 	
 	
 	
