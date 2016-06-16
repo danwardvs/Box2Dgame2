@@ -61,9 +61,9 @@ public class Character extends Box {
         float angle = body.getAngle();
         drawRect(angle,position.x*20,position.y*20,width*40,height*40,r,g,b,a);
         if(!direction)
-        	drawRect(angle,(position.x*20)-10,(position.y*20)+0,30,10,0,0,0,1);
+        	drawRect(angle,(position.x*20)-10,(position.y*20)+5,30,10,0,0,0,1);
         if(direction)
-        	drawRect(angle,(position.x*20)+10,(position.y*20)+0,30,10,0,0,0,1);
+        	drawRect(angle,(position.x*20)+10,(position.y*20)+5,30,10,0,0,0,1);
 	}
 	
 	public void update(int delta){
