@@ -26,7 +26,7 @@ public class Item extends Box {
 	}
 	
 	public void createProjectile(float newSpeed, float newAngle, float newX, float newY){
-		Projectile newProjectile = new Projectile(gameWorld,BodyType.DYNAMIC,gameCharacter,"Enemy",false,getX()+newX,getY()+newY,0.2f,0.2f,0,1,0f,0f,1,2000);
+		Projectile newProjectile = new Projectile(gameWorld,BodyType.DYNAMIC,gameCharacter,"Enemy",false,getX()+newX,getY()+newY,0.2f,0.2f,0,1,0f,0f,1,960);
 		newProjectile.applyLinearImpulse(newSpeed, newAngle);
 		gameController.createProjectile(newProjectile);
 	}
@@ -46,7 +46,7 @@ public class Item extends Box {
 				b=0.5f;
 			}
 			shootTimer++;
-			if(shootTimer>90 && alive){
+			if(shootTimer>60 && alive){
 				if(direction){
 					createProjectile(300,20,2,0.5f);
 					createProjectile(300,0f,2,0);

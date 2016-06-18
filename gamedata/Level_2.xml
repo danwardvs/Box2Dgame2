@@ -156,6 +156,19 @@
 		<b>1</b>
 		<bodytype>KINEMATIC</bodytype>
 	</object>
+	
+	<object type="Box">
+		<x>19.9</x>
+		<y>-12</y>
+		<width>0.2</width>
+		<height>4</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	 
 	 
 	
 	
@@ -251,6 +264,7 @@
 	
 	<object type="Item">
 		<itemtype>Enemy</itemtype>
+		<direction>Right</direction>
 		<x>-17</x>
 		<y>-2.5</y>
 		<width>0.5</width>

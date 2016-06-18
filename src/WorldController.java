@@ -100,8 +100,12 @@ public class WorldController {
 			        
 			    }else if(result==2){
 			    	gameItems.remove(j);
-			    	level++;
-			    	clearWorld();
+			    	if(level!=3){
+			    		level++;
+				    	clearWorld();
+			    	}
+			    	else
+			    		Sys.alert("Yippee!", "You win! Thanks for playing.");
 			    	
 
 			        break;
@@ -277,8 +281,7 @@ public class WorldController {
 	    GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 	    GL11.glBindTexture(GL11.GL_TEXTURE_2D, 0);
 	    
-	    // Load our data
-	    //loadFont();
+	    Sys.alert("Controls","WASD/Arrow Keys to move\nSpace to shoot\nR to retry level\n");
 	    
 	    while (!Display.isCloseRequested()) {
 	    	
@@ -331,8 +334,7 @@ public class WorldController {
 	  
 	
 	public static void main(String[] args) {
-		
-		
+
 		gameController = new WorldController();
 	       gameController.start();
 	    

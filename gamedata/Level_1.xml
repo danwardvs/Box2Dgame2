@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <level>
 	<object type="Character">
-		<x>-16</x>
+		<x>-0</x>
 		<y>-13</y>
 		<width>0.5</width>
 		<height>1</height>
@@ -100,7 +100,7 @@
 	
 	<object type="Item">
 		<itemtype>Star</itemtype>
-		<x>-1</x>
+		<x>-18.5</x>
 		<y>-14</y>
 		<width>0.5</width>
 		<height>0.5</height>
@@ -124,18 +124,7 @@
 		<bodytype>DYNAMIC</bodytype>
 	</object>
 	
-	<object type="Item">
-		<itemtype>Star</itemtype>
-		<x>6</x>
-		<y>-15</y>
-		<width>0.5</width>
-		<height>0.5</height>
-		<angle>0</angle>
-		<r>0</r>
-		<g>1</g>
-		<b>0</b>
-		<bodytype>DYNAMIC</bodytype>
-	</object>
+	
 	
 	<object type="Item">
 		<itemtype>Star</itemtype>
@@ -240,6 +229,67 @@
 		<b>0</b>
 		<bodytype>DYNAMIC</bodytype>
 	</object>
+	
+	<object type="Box">
+		<x>10</x>
+		<y>-13</y>
+		<width>2</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0.75</r>
+		<g>0.35</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>11</x>
+		<y>-9</y>
+		<width>2</width>
+		<height>0.5</height>
+		<angle>1</angle>
+		<r>0.75</r>
+		<g>0.35</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>11</x>
+		<y>-8</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>-10</angle>
+		<r>0.75</r>
+		<g>0.35</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object> 
+	
+	<object type="Box">
+		<x>11</x>
+		<y>-8</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>-10</angle>
+		<r>0.75</r>
+		<g>0.35</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object> 
+	
+	<object type="Box">
+		<x>11</x>
+		<y>-8</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>-10</angle>
+		<r>0.75</r>
+		<g>0.35</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object> 
+	
 	
 	
 	
