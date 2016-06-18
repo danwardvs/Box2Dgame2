@@ -25,6 +25,8 @@ public class Level {
 	float b;
 	String body_type;
 	String itemtype;
+	String directionString;
+	Boolean direction=false;
 	
 	
 	
@@ -66,8 +68,18 @@ public class Level {
 					g = Float.valueOf(eElement.getElementsByTagName("g").item(0).getTextContent());
 					b = Float.valueOf(eElement.getElementsByTagName("b").item(0).getTextContent());
 					body_type = (eElement.getElementsByTagName("bodytype").item(0).getTextContent());
-					if(object_type.equals("Item"))
+					if(object_type.equals("Item")){
 						itemtype = (eElement.getElementsByTagName("itemtype").item(0).getTextContent());
+						
+						if(itemtype.equals("Enemy")){
+							directionString = (eElement.getElementsByTagName("direction").item(0).getTextContent());
+							if(directionString.equals("Right"))
+								direction=true;
+							else
+								direction=false;
+						}
+					}
+
 
 					
 					if(object_type.equals("Box")){
@@ -90,10 +102,10 @@ public class Level {
 					}
 					if(object_type.equals("Item")){
 						if(body_type.equals("KINEMATIC")){
-							gameController.createItem(new Item(gameWorld,gameCharacter,gameController,itemtype,BodyType.KINEMATIC,true,x,y,width,height,angle,r,g,b,1));
+							gameController.createItem(new Item(gameWorld,gameCharacter,gameController,itemtype,direction,BodyType.KINEMATIC,true,x,y,width,height,angle,r,g,b,1));
 						}
 						if(body_type.equals("DYNAMIC")){
-							gameController.createItem(new Item(gameWorld,gameCharacter,gameController,itemtype,BodyType.DYNAMIC,false,x,y,width,height,angle,r,g,b,1));
+							gameController.createItem(new Item(gameWorld,gameCharacter,gameController,itemtype,direction,BodyType.DYNAMIC,false,x,y,width,height,angle,r,g,b,1));
 						}
 					}
 

@@ -123,7 +123,7 @@ public class Character extends Box {
 					createProjectile(300,-20f,2,-0.5f);
 					body.applyForceToCenter(new Vec2(-200,0));
 				}
-				if(!direction){
+				else{
 					createProjectile(-300,20,-2,0.5f);
 					createProjectile(-300,0f,-2,0);
 					createProjectile(-300,-20f,-2,-0.5f);

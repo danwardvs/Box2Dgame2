@@ -22,7 +22,8 @@ public class WorldController {
 		Boolean leftButtonDown;
 		Boolean rightButtonDown;
 	
-	    int level = 3;
+	    int level = 1;
+	    boolean buttonPressed;
 	    
 		int score = 10;
 		int BOX_AMOUNT = 25;
@@ -43,7 +44,8 @@ public class WorldController {
 	    long lastFPS;
 	    
 		
-		 public void update(int delta){
+	    
+		public void update(int delta){
 			
 			mouse_x = Mouse.getX(); 
 			mouse_y = Mouse.getY(); 
@@ -83,6 +85,12 @@ public class WorldController {
 			    Item newItem = gameItems.get(j);
 			    
 			    int result = newItem.update();
+			    if(buttonPressed){
+			    	if(newItem.getType().equals("ButtonTrigger")){
+			    		newItem.deleteBody();
+			    		gameItems.remove(j);
+			    	}
+			    }
 			    
 			    if(result==1){			    	
 			    	score--;
@@ -95,11 +103,12 @@ public class WorldController {
 			    	level++;
 			    	clearWorld();
 			    	
-			    	//gameWorld.destroyBody(body);
 
 			        break;
-			    	// gameLevel = new Level(gameController,gameWorld,gameCharacter,"gamedata/Level_1.xml");
-					// gameLevel.load_level();
+	
+			    	
+			    }else if(result==3){
+			    	buttonPressed=true;
 			    	
 			    }
 			    
@@ -138,6 +147,8 @@ public class WorldController {
 				
 		} 
 		public void clearWorld(){
+				buttonPressed=false;
+			
 			  for(Box box: gameBoxes){
 		          box.deleteBody();
 

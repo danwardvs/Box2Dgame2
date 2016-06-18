@@ -17,7 +17,7 @@
 	
 	
 	<object type="Box">
-		<x>-15</x>
+		<x>-17</x>
 		<y>-10</y>
 		<width>4  </width>
 		<height>0.2</height>
@@ -29,7 +29,19 @@
 	</object>
 	
 	<object type="Box">
-		<x>-5</x>
+		<x>-2</x>
+		<y>-10</y>
+		<width>4  </width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>-4</x>
 		<y>-5</y>
 		<width>4</width>
 		<height>0.2</height>
@@ -39,21 +51,237 @@
 		<b>1</b>
 		<bodytype>KINEMATIC</bodytype>
 	</object>
+	
+	<object type="Box">
+		<x>-19</x>
+		<y>-5</y>
+		<width>4</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>1</x>
+		<y>-7.5</y>
+		<width>3</width>
+		<height>0.2</height>
+		<angle>2</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>-2</x>
+		<y>0</y>
+		<width>4</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>-17</x>
+		<y>0</y>
+		<width>4  </width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
 	 
-	
 	 
+	 <object type="Box">
+		<x>1</x>
+		<y>-2.5</y>
+		<width>3</width>
+		<height>0.2</height>
+		<angle>-2</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>-4</x>
+		<y>5</y>
+		<width>4</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>-19</x>
+		<y>5</y>
+		<width>4</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>18</x>
+		<y>-10</y>
+		<width>7</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>16</x>
+		<y>5</y>
+		<width>7</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
 	
 	
+	<object type="Box">
+		<x>1</x>
+		<y>2.5</y>
+		<width>3</width>
+		<height>0.2</height>
+		<angle>2</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
 	
+
 	
+	<object type="Box">
+		<x>-11</x>
+		<y>10</y>
+		<width>13</width>
+		<height>0.2</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>1.2</x>
+		<y>8.3</y>
+		<width>2</width>
+		<height>0.2</height>
+		<angle>-2</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>10.2</x>
+		<y>8.3</y>
+		<width>2</width>
+		<height>0.2</height>
+		<angle>-2</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>10</x>
+		<y>2.3</y>
+		<width>3</width>
+		<height>0.2</height>
+		<angle>2</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+		<object type="Box">
+		<x>10</x>
+		<y>-2.3</y>
+		<width>3</width>
+		<height>0.2</height>
+		<angle>-2</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>10</x>
+		<y>-7.5</y>
+		<width>3</width>
+		<height>0.2</height>
+		<angle>2</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>11.1</x>
+		<y>13</y>
+		<width>3</width>
+		<height>0.2</height>
+		<angle>1.57</angle>
+		<r>0</r>
+		<g>0</g>
+		<b>1</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	 
+	 
+	 
 	
 	
 	
 	
 	<object type="Box">
-		<x>-10</x>
-		<y>-8</y>
-		<width>1</width>
+		<x>4</x>
+		<y>8</y>
+		<width>2</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0.75</r>
+		<g>0.35</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>5</x>
+		<y>8</y>
+		<width>0.5</width>
 		<height>1</height>
 		<angle>0</angle>
 		<r>0.75</r>
@@ -61,6 +289,73 @@
 		<b>0</b>
 		<bodytype>DYNAMIC</bodytype>
 	</object>
+	
+	<object type="Box">
+		<x>5</x>
+		<y>9</y>
+		<width>0.5</width>
+		<height>1</height>
+		<angle>0</angle>
+		<r>0.75</r>
+		<g>0.35</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	
+	<object type="Box">
+		<x>6</x>
+		<y>8</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0.75</r>
+		<g>0.35</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>6</x>
+		<y>8</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0.75</r>
+		<g>0.35</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>3</x>
+		<y>8</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0.75</r>
+		<g>0.35</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Box">
+		<x>9</x>
+		<y>8</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0.75</r>
+		<g>0.35</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -85,8 +380,80 @@
 	
 	
 	<object type="Item">
+		<itemtype>ButtonTrigger</itemtype>
+		<x>7</x>
+		<y>6</y>
+		<width>10</width>
+		<height>0.25</height>
+		<angle>0</angle>
+		<r>1</r>
+		<g>0.5</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Button</itemtype>
+		<x>-5.8</x>
+		<y>5.2</y>
+		<width>2</width>
+		<height>0.1</height>
+		<angle>0</angle>
+		<r>1</r>
+		<g>0.5</g>
+		<b>0</b>
+		<bodytype>KINEMATIC</bodytype>
+	</object>
+	
+	
+	<object type="Item">
+		<itemtype>Enemy</itemtype>
+		<direction>Right</direction>
+		<x>-15</x>
+		<y>-8</y>
+		<width>0.5</width>
+		<height>1</height>
+		<angle>0</angle>
+		<r>1</r>
+		<g>0</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	
+	<object type="Item">
+		<itemtype>Enemy</itemtype>
+		<direction>Left</direction>
+		<x>-6</x>
+		<y>-3</y>
+		<width>0.5</width>
+		<height>1</height>
+		<angle>0</angle>
+		<r>1</r>
+		<g>0</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Enemy</itemtype>
+		<direction>Right</direction>
+		<x>-15</x>
+		<y>2</y>
+		<width>0.5</width>
+		<height>1</height>
+		<angle>0</angle>
+		<r>1</r>
+		<g>0</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	
+	
+	<object type="Item">
 		<itemtype>Star</itemtype>
-		<x>1.5</x>
+		<x>-3</x>
 		<y>12</y>
 		<width>0.5</width>
 		<height>0.5</height>
@@ -96,6 +463,126 @@
 		<b>0</b>
 		<bodytype>DYNAMIC</bodytype>
 	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-2</x>
+		<y>1</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-3</x>
+		<y>1</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-4</x>
+		<y>1</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-2</x>
+		<y>-4</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-3</x>
+		<y>-4</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-4</x>
+		<y>-4</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-2</x>
+		<y>-9</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-3</x>
+		<y>-9</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	<object type="Item">
+		<itemtype>Star</itemtype>
+		<x>-4</x>
+		<y>-9</y>
+		<width>0.5</width>
+		<height>0.5</height>
+		<angle>0</angle>
+		<r>0</r>
+		<g>1</g>
+		<b>0</b>
+		<bodytype>DYNAMIC</bodytype>
+	</object>
+	
+	
 	
 	
 	
